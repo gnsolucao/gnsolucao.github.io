@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>GN Soluções Digitais</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --bg: #1E1E2F;
+      --text: #EDEDED;
+      --accent: #8BD3DD;
+      --text-muted: #A7A9BE;
+    }
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: 'Inter', sans-serif;
+      background-color: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+    }
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1.5rem 5%;
+      border-bottom: 1px solid #2E2E40;
+    }
+    nav a {
+      margin-left: 2rem;
+      text-decoration: none;
+      color: var(--text);
+      transition: color 0.3s;
+    }
+    nav a:hover {
+      color: var(--accent);
+    }
+    .logo {
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+    }
+    .logo img {
+      height: 40px;
+    }
+    .section {
+      padding: 5rem 5%;
+      text-align: center;
+    }
+    .section h2, .section h3 {
+      margin-bottom: 1rem;
+      font-weight: 600;
+    }
+    .section p {
+      max-width: 600px;
+      margin: 0 auto 2rem;
+      color: var(--text-muted);
+    }
+    .btn {
+      background-color: var(--accent);
+      color: var(--bg);
+      padding: 1rem 2rem;
+      border: none;
+      border-radius: 2rem;
+      font-weight: 600;
+      cursor: pointer;
+      transition: filter 0.2s;
+    }
+    .btn:hover {
+      filter: brightness(1.1);
+    }
+    .services {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 2rem;
+      margin-top: 3rem;
+    }
+    .card {
+      background: rgba(255, 255, 255, 0.05);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      padding: 2rem;
+      border-radius: 1.5rem;
+      backdrop-filter: blur(6px);
+    }
+    footer {
+      text-align: center;
+      padding: 2rem;
+      border-top: 1px solid rgba(255,255,255,0.1);
+      font-size: 0.875rem;
+      color: var(--text-muted);
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="logo">
+      <img src="logo-gn.png" alt="GN Logo">
+      <h1>GN Soluções Digitais</h1>
+    </div>
+    <nav>
+      <a href="#about">Sobre</a>
+      <a href="#services">Serviços</a>
+      <a href="#contact">Contato</a>
+    </nav>
+  </header>
+
+  <section class="section" id="hero">
+    <h2 style="font-size: 2.5rem;">Soluções digitais sob medida para sua empresa crescer</h2>
+    <p>Desenvolvemos sistemas personalizados que otimizam processos, reduzem custos e aumentam a eficiência operacional.</p>
+    <button class="btn">Solicite uma proposta</button>
+  </section>
+
+  <section class="section" id="about">
+    <h3 style="font-size: 2rem;">Quem somos</h3>
+    <p>A GN Soluções Digitais é uma empresa jovem e comprometida com o desenvolvimento de software de alta qualidade. Nosso foco é entender as necessidades reais dos nossos clientes e entregar soluções tecnológicas que tragam resultados concretos. Tecnologia com propósito, feita para escalar o seu negócio.</p>
+  </section>
+
+  <section class="section" id="services">
+    <h3 style="font-size: 2rem;">Nossos serviços</h3>
+    <div class="services">
+      <div class="card">
+        <h4>Sistemas personalizados</h4>
+        <p>Desenvolvimento de software sob medida para atender exatamente às demandas do seu negócio.</p>
+      </div>
+      <div class="card">
+        <h4>Consultoria de processos</h4>
+        <p>Análise e mapeamento de processos com foco em digitalização, automação e eficiência.</p>
+      </div>
+      <div class="card">
+        <h4>Integrações e automações</h4>
+        <p>Integramos sistemas e criamos automações para eliminar tarefas repetitivas e aumentar a produtividade.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="contact">
+    <h3 style="font-size: 2rem;">Vamos conversar?</h3>
+    <p>Entre em contato e descubra como a GN Soluções Digitais pode ajudar sua empresa a evoluir com tecnologia.</p>
+    <a href="mailto:contato@gnsolucoes.com" class="btn">contato@gnsolucoes.com</a>
+  </section>
+
+  <footer>
+    &copy; 2025 GN Soluções Digitais. Todos os direitos reservados.
+  </footer>
+
+</body>
+</html>
